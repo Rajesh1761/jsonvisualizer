@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic JSON Visualizer | JSON visualizer | JSON formatter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="js/d3.v7.min.js"></script>
+    <script src="js/canvg.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <meta name="robots" content="index,follow"/>
+    <meta name="description" content="JSON visualizer is a tool for visualizing into json graphs, analyzing, formatting, querying, transforming and validating JSON, CSV, YAML, XML, and more."/>
+    <meta name="theme-color" content="#36393E"/><meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@jsonvisualizer"/><meta property="og:title" content="JSON visualizer | Transform your json data into interactive graphs"/>
+    <meta property="og:description" content="JSON visualizer is a tool for visualizing into graphs, analyzing, editing, formatting, querying, transforming and validating JSON, CSV, YAML, XML, and more."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="627"/>
+</head>
+<body>
+<!-- Fixed Header -->
+<div id="header">
+    <!-- Left Side: Logo -->
+    <div id="header-left">
+        <div class="logo">JSON Visualizer</div>
+    </div>
+    <!-- Right Side: Content (Search and Export) -->
+    <div id="header-right">
+        <input type="text" id="search-input" placeholder="Search for a node...">
+        <button id="search-button">Search</button>
+        <select id="export-format">
+            <option value="svg">SVG</option>
+            <option value="png">PNG</option>
+            <option value="jpg">JPG</option>
+        </select>
+        <button id="export-button">Export</button>
+    </div>
+</div>
+<!-- Left Side: JSON Input -->
+<div id="input-section">
+    <textarea id="json-input" placeholder="Paste your JSON here..."></textarea>
+    <button id="visualize-button">Visualize</button>
+    <button id="clear-button">Clear</button>
+    <input type="hidden" id="square-size" value="10" min="1">
+</div>
+<!-- Right Side: JSON Visualization -->
+<div id="visualization-section">
+    <svg id="graph"></svg>
+</div>
+<!-- Fixed Footer -->
+<div id="footer">
+    © 2025 JSON Visualizer. All rights reserved.
+</div>
+<!-- Loading Spinner -->
+<div class="loading-spinner" id="loading-spinner">Loading...</div>
+<script src="js/visual.js"></script>
+</body>
+</html>

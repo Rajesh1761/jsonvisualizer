@@ -1,0 +1,165 @@
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background: #f9f9f9;
+        }
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #header-left .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        #header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 2%;
+        }
+        #header-right input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        #header-right button {
+            padding: 8px 12px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        #header-right button:hover {
+            background: #45a049;
+        }
+        #header-right select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        #input-section {
+            width: 30%;
+            padding: 80px 20px 20px; /* Adjusted for header */
+            background: #fff;
+            border-right: 1px solid #ddd;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);];
+            height: 100%;
+        }
+        #input-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        #input-section textarea {
+            width: 95%;
+            height: 200px;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            font-size: 14px;
+        }
+        #input-section button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        #input-section button:hover {
+            background: #45a049;
+        }
+        #visualization-section {
+            width: 70%;
+            padding: 80px 20px 20px; /* Adjusted for header */
+            overflow: auto;
+            height: 100vh;
+            background: #fff;
+        }
+        #graph {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+        }
+        .node rect {
+            fill: #4CAF50;
+            stroke: #388E3C;
+            stroke-width: 1.5px;
+        }
+        .link {
+            stroke: #999;
+            stroke-width: 1px;
+            fill: none;
+        }
+        .text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            fill: #333;
+            font-weight: 500;
+        }
+        .highlighted rect {
+            fill: #ffeb3b;
+            stroke: #fbc02d;
+            stroke-width: 2px;
+        }
+        .tooltip {
+            position: absolute;
+            background: #fff;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            pointer-events: none;
+            opacity: 0;
+            font-size: 12px;
+        }
+        .loading-spinner {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: #4CAF50;
+        }
+        #footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
